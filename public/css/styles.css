@@ -39,3 +39,15 @@ h1 {
 .portrait {
     width:300px;
 }
+
+input {
+    width:250px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid black;
+    background: #888888;
+    padding: 8px;
+    color: white;
+}
