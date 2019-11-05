@@ -5,6 +5,7 @@ const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
  
 const app = express();
+const port = process.env.PORT || 3000;
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewPath = path.join(__dirname, '../templates/views') 
 const paritalsPath = path.join(__dirname, '../templates/partials'); 
@@ -84,7 +85,6 @@ app.get('*', (req, res) => { // 어떠한 route 와도 일치하지 않으면 40
 
 
 
-const PORT = 3000;
-app.listen(PORT, () => {
-    console.log(`Sever start with ${PORT}`)   
+app.listen(port, () => {
+    console.log(`Sever start with ${port}`)   
 })
